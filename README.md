@@ -6,7 +6,7 @@ Download latest rpi imager
 
 Install rpi os lite 32,
 
-* Edit settings
+* Edit settings - hnoiuhuoi
 * hostname rpi
 * username rpi
 * pass your choice
