@@ -1,19 +1,27 @@
-# Download putty
+# Instructions
 
-## Download latest rpi imager
+Download putty
 
-### Install rpi os lite 32,
+Download latest rpi imager
 
-- Edit settings.
-    hostname rpi, username rpi, pass your choice
-               configure wlan
-               set locale
-               services: enable ssh, use pass authentication
-#flash sd card
-#boot pi and connect via putty ssh
-#update
-  ````````
+Install rpi os lite 32,
+
+- Edit settings
+- hostname rpi
+- username rpi
+- pass your choice
+- configure wlan
+- set locale
+- enable ssh, use pass authentication
+
+flash sd card
+
+boot pi and connect via putty ssh
+
+### Update
+```
   sudo apt update && sudo apt upgrade -y
+````
 ----------------------------------------------------------------------------
 
 6: Run
