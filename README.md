@@ -1,7 +1,7 @@
 1: download putty and latest rpi imager, install rpi os lite 32,
 2: edit settings: hostname rpi, username rpi, pass your choice
                configure wlan
-               set locale
+               `set locale`
                services: enable ssh, use pass authentication
 3: flash sd card
 4: boot pi and connect via putty ssh
