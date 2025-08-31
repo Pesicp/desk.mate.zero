@@ -16,5 +16,5 @@
 ---
 
 ## 2. Update System
-```bash
+bash
 sudo apt update && sudo apt upgrade -y
