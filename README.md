@@ -1,4 +1,4 @@
-1: download putty and latest rpi imager, install rpi os lite 32,
+## download putty and latest rpi imager, install rpi os lite 32,
 2: edit settings: hostname rpi, username rpi, pass your choice
                configure wlan
                `set locale`
