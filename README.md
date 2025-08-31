@@ -6,13 +6,13 @@ Download latest rpi imager
 
 Install rpi os lite 32,
 
-- Edit settings
-- hostname rpi
-- username rpi
-- pass your choice
-- configure wlan
-- set locale
-- enable ssh, use pass authentication
+* Edit settings
+* hostname rpi
+* username rpi
+* pass your choice
+* configure wlan
+* set locale
+* enable ssh, use pass authentication
 
 flash sd card
 
