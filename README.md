@@ -1,8 +1,8 @@
-#Download putty
+# Download putty
 
-#Download latest rpi imager
+## Download latest rpi imager
 
-#Install rpi os lite 32,
+### Install rpi os lite 32,
 
 
 #Edit settings: hostname rpi, username rpi, pass your choice
