@@ -1,3 +1,4 @@
+markdown
 1. Prepare Your SD Card
 
 Download Raspberry Pi Imager
@@ -139,7 +140,9 @@ sudo systemctl status weather_app.service
 
 Test reboot:
 
+markdown
 sudo reboot
+markdown
 
 11. Optional System Cleanup & Firewall
 sudo systemctl disable avahi-daemon bluetooth
