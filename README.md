@@ -1,11 +1,10 @@
-#Download putty
+# Download putty
 
 ## Download latest rpi imager
 
 ### Install rpi os lite 32,
 
-
-#Edit settings: hostname rpi, username rpi, pass your choice
+Edit settings: hostname rpi, username rpi, pass your choice
                configure wlan
                set locale
                services: enable ssh, use pass authentication
