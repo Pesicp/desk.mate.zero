@@ -12,7 +12,7 @@
 #flash sd card
 #boot pi and connect via putty ssh
 #update
-  ``
+  ````````
   sudo apt update && sudo apt upgrade -y
 ----------------------------------------------------------------------------
 
