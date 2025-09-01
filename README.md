@@ -31,13 +31,10 @@ sudo apt install -y python3-pip python3-setuptools python3-venv python3-dbus net
     libmtdev1 libxrender1 libgles2-mesa libegl1-mesa libgl1-mesa-glx libsdl2-dev mesa-utils
 ```
 # Enable and start Network Manager
-```
+```bash
 sudo systemctl enable NetworkManager
 sudo systemctl start NetworkManager
 ```
-
----
-
 ## 3. Python Environment and App Setup
 
 ```bash
