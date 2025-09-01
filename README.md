@@ -10,7 +10,7 @@ All commands are designed for Raspberry Pi OS Lite (32-bit) with Python 3.
 - Using Raspberry Pi Imager:
   - Select device: **Raspberry Pi Zero 2W**
   - Select OS: **Raspberry Pi OS Lite (32-bit)**
-  - Edit settings (**⚙️**)
+  - Edit settings, If there is no settings it will appear when you press **NEXT**
     - Hostname: `rpi`
     - Enable SSH (password authentication)
     - Username: `rpi` (better to leave it so, script and folders include this Username)
