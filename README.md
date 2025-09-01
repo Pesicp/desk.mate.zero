@@ -15,8 +15,8 @@ All commands are designed for Raspberry Pi OS Lite (32-bit) with Python 3.
     - Enable SSH (password authentication)
     - Username: `rpi` (better to leave it so, script and folders include this Username)
     - Password: `yourpassword`
-    - Configure WiFi (SSID, password, country)
-    - Set locale, timezone, keyboard layout
+    - Configure WiFi (Here write your network name and password)
+    - Set country, locale, timezone, keyboard layout
   - Flash the SD card and insert into your Pi.
 - Boot the Pi and connect via SSH using PuTTY.
 
@@ -24,13 +24,14 @@ All commands are designed for Raspberry Pi OS Lite (32-bit) with Python 3.
 
 ## 2. System Setup
 
-```bash
 # Update system and install required packages
+```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y python3-pip python3-setuptools python3-venv python3-dbus network-manager \
     libmtdev1 libxrender1 libgles2-mesa libegl1-mesa libgl1-mesa-glx libsdl2-dev mesa-utils
-
+```
 # Enable and start Network Manager
+```
 sudo systemctl enable NetworkManager
 sudo systemctl start NetworkManager
 ```
