@@ -9,7 +9,7 @@ All commands are designed for Raspberry Pi OS Lite (32-bit) with Python 3.
 - Download and install the [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
 - Using Raspberry Pi Imager:
   - Select **Raspberry Pi Other - Raspberry Pi OS Lite (32-bit)**
-  - Edit settings (**⚙️**): **If you dont have settings, when you press next it will apear**
+  - Edit settings (**⚙️**)  **If you dont have settings icon, when you press next it will apear**
     - Hostname: `rpi`
     - Enable SSH (password authentication)
     - Username: `rpi` (better to leave it, as all folder structure and script is made with this username)
