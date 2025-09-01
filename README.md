@@ -3,51 +3,56 @@
 This guide will walk you through setting up the Weather Display App on a Raspberry Pi (tested with RPi Zero 2W and Spotpear touchscreen).  
 All commands are designed for Raspberry Pi OS Lite (32-bit) with Python 3.
 
-# 1. Preparation
+## 1. Preparation
 
 - Download and install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (for SSH access).
 - Download and install the [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
 - Using Raspberry Pi Imager:
-  - Select device: **Raspberry Pi Zero 2W**
-  - Select OS: **Raspberry Pi OS Lite (32-bit)**
-  - Edit settings, If there is no settings it will appear when you press **NEXT**
+  - Select **Raspberry Pi OS Lite (32-bit)**
+  - Edit settings (**⚙️**):
     - Hostname: `rpi`
     - Enable SSH (password authentication)
-    - Username: `rpi` (better to leave it so, script and folders include this Username)
+    - Username: `rpi` (or your choice)
     - Password: `yourpassword`
-    - Configure WiFi (Here write your network name and password)
-    - Set country, locale, timezone, keyboard layout
+    - Configure WiFi (SSID, password, country)
+    - Set locale, timezone, keyboard layout
   - Flash the SD card and insert into your Pi.
 - Boot the Pi and connect via SSH using PuTTY.
 
 ---
 
-# 2. System Setup
+## 2. System Setup
+
 ```bash
+# Update system and install required packages
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y python3-pip python3-setuptools python3-venv python3-dbus network-manager \
     libmtdev1 libxrender1 libgles2-mesa libegl1-mesa libgl1-mesa-glx libsdl2-dev mesa-utils
-```
-## Enable and start Network Manager
-```bash
+
+# Enable and start Network Manager
 sudo systemctl enable NetworkManager
 sudo systemctl start NetworkManager
 ```
-# 3. Python Environment and App Setup
+
+---
+
+## 3. Python Environment and App Setup
+
 ```bash
+# Create weather_app folder and Python virtual environment
 mkdir -p ~/weather_app
 python3 -m venv ~/weather_app/venv
-```
-```bash
+
+# Activate virtual environment
 source ~/weather_app/venv/bin/activate
-```
-```bash
+
+# Install Python dependencies
 pip install kivy requests tzdata feedparser
 ```
 
 ---
 
-# 4. Weather Script
+## 4. Weather Script
 
 ```bash
 # Create and edit the weather script
