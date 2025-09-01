@@ -22,30 +22,31 @@ All commands are designed for Raspberry Pi OS Lite (32-bit) with Python 3.
 
 ---
 
-## 2. System Setup
+# 2. System Setup
 
-# Update system and install required packages
+## Update system and install required packages
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y python3-pip python3-setuptools python3-venv python3-dbus network-manager \
     libmtdev1 libxrender1 libgles2-mesa libegl1-mesa libgl1-mesa-glx libsdl2-dev mesa-utils
 ```
-# Enable and start Network Manager
+## Enable and start Network Manager
 ```bash
 sudo systemctl enable NetworkManager
 sudo systemctl start NetworkManager
 ```
-## 3. Python Environment and App Setup
-
-```bash
+# 3. Python Environment and App Setup
 # Create weather_app folder and Python virtual environment
+```bash
 mkdir -p ~/weather_app
 python3 -m venv ~/weather_app/venv
-
+```
 # Activate virtual environment
+```bash
 source ~/weather_app/venv/bin/activate
-
+```
 # Install Python dependencies
+```bash
 pip install kivy requests tzdata feedparser
 ```
 
