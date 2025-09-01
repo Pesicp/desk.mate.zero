@@ -18,6 +18,7 @@ All commands are designed for Raspberry Pi OS Lite (32-bit) with Python 3.
     - Set country, locale, timezone, keyboard layout
   - Flash the SD card and insert into your Pi.
 - Boot the Pi and connect via SSH using PuTTY.
+    - If you cant connect with your username via putty, use your local ip adress, you can find it on the pi display  
 
 ---
 
