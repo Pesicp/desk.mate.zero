@@ -8,7 +8,7 @@ All commands are designed for Raspberry Pi OS Lite (32-bit) with Python 3.
 - Download and install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (for SSH access).
 - Download and install the [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
 - Using Raspberry Pi Imager:
-  - Select **Raspberry Pi OS Lite (32-bit)**
+  - Select **Raspberry Pi Other - Raspberry Pi OS Lite (32-bit)**
   - Edit settings (**⚙️**):
     - Hostname: `rpi`
     - Enable SSH (password authentication)
