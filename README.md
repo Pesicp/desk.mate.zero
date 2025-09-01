@@ -8,8 +8,9 @@ All commands are designed for Raspberry Pi OS Lite (32-bit) with Python 3.
 - Download and install [PuTTY](https://www.putty.org/) (for SSH access).
 - Download and install the [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
 - Using Raspberry Pi Imager:
+  - Select device **Raspberry Pi Zero 2W**
   - Select **Raspberry Pi OS Lite (32-bit)**
-  - Edit settings (**⚙️**):
+  - Edit settings (**⚙️**)
     - Hostname: `rpi`
     - Enable SSH (password authentication)
     - Username: `rpi` (or your choice)
