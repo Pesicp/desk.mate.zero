@@ -9,13 +9,13 @@ All commands are designed for Raspberry Pi OS Lite (32-bit) with Python 3.
 - Download and install the [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
 - Using Raspberry Pi Imager:
   - Select **Raspberry Pi Other - Raspberry Pi OS Lite (32-bit)**
-  - Edit settings (**⚙️**):
+  - Edit settings (**⚙️**): **If you dont have settings, when you press next it will apear**
     - Hostname: `rpi`
     - Enable SSH (password authentication)
-    - Username: `rpi` (or your choice)
+    - Username: `rpi` (better to leave it, as all folder structure and script is made with this username)
     - Password: `yourpassword`
-    - Configure WiFi (SSID, password, country)
-    - Set locale, timezone, keyboard layout
+    - Configure WiFi (Input name and password of your network)
+    - Set country, locale, timezone, keyboard layout
   - Flash the SD card and insert into your Pi.
 - Boot the Pi and connect via SSH using PuTTY.
 
