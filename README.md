@@ -71,7 +71,7 @@ nano ~/weather_app/weather_script.py
 mkdir -p ~/weather_app/weather_icons
 cd ~/weather_app/weather_icons
 ```
-**2. Download standard icons**
+**2. Download weather icons**
 ```
 wget https://openweathermap.org/img/wn/{01d,01n,02d,02n,03d,03n,04d,04n,09d,09n,10d,10n,11d,11n,13d,13n,50d,50n}.png
 ```
@@ -90,7 +90,7 @@ cd /home/rpi/pictures/
 ```
 **2. Download your pictures with wget, for example:**
 ```
-wget https://yourdomain.com/image1.jpg
+wget https://yourpictureurl.com/image.jpg
 ```
 **Here are some nice pictures for start**
 ```
@@ -109,28 +109,23 @@ wget https://images.wallpaperscraft.com/image/single/autumn_path_foliage_131773_
 wget https://images.wallpaperscraft.com/image/single/tree_horizon_sunset_128367_1024x600.jpg
 ```
 ---
-
 ## 8. Run the App
-
+**1. Activate venv (if not already active)**
 ```bash
-# Activate venv (if not already active)
 source ~/weather_app/venv/bin/activate
-
-# Run the app
-python ~/weather_app/weather_script.py
-
-# To exit, press Ctrl+C in the terminal.
 ```
-
+**2. Run the app**
+```
+python ~/weather_app/weather_script.py
+```
+**3. To exit, press Ctrl+C in the terminal**
 ---
-
 ## 9. Make it Auto-Start on Boot
-
+**1. Run:**
 ```bash
 sudo nano /etc/systemd/system/weather_app.service
 ```
-
-Paste this:
+**2. Paste this inside:**
 ```
 [Unit]
 Description=Weather Display App
@@ -148,23 +143,21 @@ RestartSec=3
 [Install]
 WantedBy=multi-user.target
 ```
-
-_Save and exit (Ctrl+O, Enter, Ctrl+X)_
-
+**3: Save and exit (Ctrl+O, Enter, Ctrl+X)**
+**4. Enable and start the service
 ```bash
-# Enable and start the service
 sudo systemctl enable weather_app.service
 sudo systemctl start weather_app.service
-
-# Check status
+```
+**5. Check status**
+```
 sudo systemctl status weather_app.service
-
-# Reboot to test auto-start
+```
+**6. Reboot to test auto-start**
+```
 sudo reboot
 ```
-
 ---
-
 ## 10. Security (Optional but Recommended)
 
 ```bash
