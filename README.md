@@ -1,11 +1,12 @@
+# DESK MATE ZERO
 # Description
 
 - **Picture slideshow** - New picture every 60 minutes, Picture changes on touch.
 - **Fullscreen Clock** - Wifi on, it always shows time from the first weather card. Wifi off, shows time from network.
-- **Weather Forecast** - Shows weather, hourly 9 hours in advance, daily 5 days, and current. Also shows time in selected city. When wifi is off the clock keeps ticking, the weather dissapears. 
+- **Weather Forecast** - Shows temp, current condition, weather, hourly 9 hours in advance, daily 5 days, and current. Also shows time in selected city. When wifi is off the clock keeps ticking, the weather dissapears. Has a refresh button for manual refresh.
 - **Add City** - Add and remove cities. Limit is 10 cities for better performance. Douplicates cant be added.
-- **Power, Wifi** - Power off, Reboot. Turn Wifi on or off, change networks with ease.
-- Double press/touch to lock/unlock the screen, its disabled for add city card. Its set up realy fast to avoid accidental lock, 0.2 seconds
+- **Power, Wifi** - Power off, Reboot. Turn Wifi on or off, connect, disconnect, forget networks with ease.
+- Double press/touch to lock/unlock the screen, its disabled for add city card. Its set up realy fast to avoid accidental lock, 0.2 seconds. With 2 fingers it works best. 
 
 ---
 
