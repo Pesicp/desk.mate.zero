@@ -305,4 +305,5 @@ python ~/weather_app/weather_script.py
 ```	
 - **If Putty doesnt show you login screen just restart it**
 ---
+# I made this with help of ai, i am a hobyst not a programmer, if you have some tips to optimise the script and the setup, be my guest.
 # **Enjoy**
