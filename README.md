@@ -219,15 +219,15 @@ sudo chmod +x /usr/local/bin/weather_safe_update.sh
 
 ## Troubleshooting
 
-**- If the device freezes, unplug and replug power**
-**- If you exit SSH for some reason, you must run this first to activate venv**
+- **If the device freezes, unplug and replug power**
+- **If you exit SSH for some reason, you must run this first to activate venv**
 ```
 source /home/rpi/weather_app/venv/bin/activate
 ```	
-**- Then you can run your script again**
+- **Then you can run your script again**
 ```
 python ~/weather_app/weather_script.py
 ```	
-**- If Putty doesnt show you login screen just restart it**
+- **If Putty doesnt show you login screen just restart it**
 ---
 # **Enjoy**
