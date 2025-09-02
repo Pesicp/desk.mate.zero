@@ -30,7 +30,7 @@ I used Raspberry Pi Zero 2W and [Spotpear](https://de.aliexpress.com/item/100500
     - If you cant connect with your username via putty, use your local ip adress, you can find it on the pi display  
 ---
 ## 2. System Setup
-1. Update system and install required packages
+**1. Update system and install required packages**
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y python3-pip python3-setuptools python3-venv python3-dbus network-manager 
