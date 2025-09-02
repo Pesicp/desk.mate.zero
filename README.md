@@ -1,6 +1,6 @@
 # ZeroPiFrame - Installation Guide
 
-This guide will walk you through setting up the Weather Display App on a Raspberry Pi Zero 2W and [Spotpear](https://de.aliexpress.com/item/1005004999310505.html?spm=a2g0o.productlist.main.1.343c79d0O9bxr5&algo_pvid=21ccbcee-6f60-4764-ae89-6e865c7c0ebb&algo_exp_id=21ccbcee-6f60-4764-ae89-6e865c7c0ebb-0&pdp_ext_f=%7B%22order%22%3A%22104%22%2C%22eval%22%3A%221%22%7D&pdp_npi=6%40dis%21EUR%2137.77%2127.99%21%21%2143.14%2131.97%21%4021039a5b17567712736503882e0838%2112000031298315802%21sea%21DE%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3Ad409efa6%3Bm03_new_user%3A-29895%3BpisId%3A5000000174220118&curPageLogUid=ota5QVADPla9&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005004999310505%7C_p_origin_prod%3A) 7 inch touchscreen.
+I used Raspberry Pi Zero 2W and [Spotpear](https://de.aliexpress.com/item/1005004999310505.html?spm=a2g0o.productlist.main.1.343c79d0O9bxr5&algo_pvid=21ccbcee-6f60-4764-ae89-6e865c7c0ebb&algo_exp_id=21ccbcee-6f60-4764-ae89-6e865c7c0ebb-0&pdp_ext_f=%7B%22order%22%3A%22104%22%2C%22eval%22%3A%221%22%7D&pdp_npi=6%40dis%21EUR%2137.77%2127.99%21%21%2143.14%2131.97%21%4021039a5b17567712736503882e0838%2112000031298315802%21sea%21DE%210%21ABX%211%210%21n_tag%3A-29910%3Bd%3Ad409efa6%3Bm03_new_user%3A-29895%3BpisId%3A5000000174220118&curPageLogUid=ota5QVADPla9&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005004999310505%7C_p_origin_prod%3A) 7 inch touchscreen.
 All commands are designed for Raspberry Pi OS Lite (32-bit) with Python 3.
 
 ## 1. Preparation
@@ -27,7 +27,7 @@ All commands are designed for Raspberry Pi OS Lite (32-bit) with Python 3.
 ```bash
 # Update system and install required packages
 sudo apt update && sudo apt upgrade -y
-sudo apt install -y python3-pip python3-setuptools python3-venv python3-dbus network-manager \
+sudo apt install -y python3-pip python3-setuptools python3-venv python3-dbus network-manager 
     libmtdev1 libxrender1 libgles2-mesa libegl1-mesa libgl1-mesa-glx libsdl2-dev mesa-utils
 
 # Enable and start Network Manager
@@ -108,7 +108,7 @@ python ~/weather_app/weather_script.py
 
 ---
 
-## 9. Auto-Start on Boot (systemd service)
+## 9. Make it Auto-Start on Boot
 
 ```bash
 sudo nano /etc/systemd/system/weather_app.service
@@ -177,7 +177,7 @@ sudo ufw status verbose
 
 ---
 
-## 11. Auto-Update Script (Optional)
+## 11. Auto-Update in background every night at 04:00 (Optional)
 
 ```bash
 # Create update script
@@ -229,4 +229,4 @@ Create systemd timer and service files as needed (see advanced systemd documenta
 
 ---
 
-**Enjoy your Weather Display App!**
+**Enjoy**
