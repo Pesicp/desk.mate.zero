@@ -57,7 +57,7 @@ source ~/weather_app/venv/bin/activate
 pip install kivy requests tzdata feedparser
 ```
 ---
-## 4. Weather Script
+## 4. Script
 **1. Create and edit the weather script**
 ```bash
 nano ~/weather_app/weather_script.py
