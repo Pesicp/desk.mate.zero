@@ -147,7 +147,7 @@ WantedBy=multi-user.target
 ```
 - **3. Save and exit (Ctrl+O, Enter, Ctrl+X)****
 
-- **4. Enable and start the service**
+**4. Enable and start the service**
 ```bash
 sudo systemctl enable weather_app.service
 sudo systemctl start weather_app.service
