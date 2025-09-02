@@ -1,4 +1,4 @@
-# DESK MATE ZERO
+# DeskMate Zero
 # Description
 - **Picture slideshow** - New picture every 60 minutes, Picture changes on touch.
 - **Fullscreen Clock** - Wifi on, it always shows time from the first weather card. Wifi off, shows time from network.
