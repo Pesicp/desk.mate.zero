@@ -127,7 +127,7 @@ python ~/weather_app/weather_script.py
 ```bash
 sudo nano /etc/systemd/system/weather_app.service
 ```
-**2. Paste this inside:**
+**2. Paste this inside, then Save and exit (Ctrl+O, Enter, Ctrl+X)**
 ```
 [Unit]
 Description=Weather Display App
@@ -145,18 +145,16 @@ RestartSec=3
 [Install]
 WantedBy=multi-user.target
 ```
-- **3. Save and exit (Ctrl+O, Enter, Ctrl+X)****
-
-**4. Enable and start the service**
+**3. Enable and start the service**
 ```bash
 sudo systemctl enable weather_app.service
 sudo systemctl start weather_app.service
 ```
-**5. Check status**
+**4. Check status**
 ```
 sudo systemctl status weather_app.service
 ```
-**6. Reboot to test auto-start**
+**5. Reboot to test auto-start**
 ```
 sudo reboot
 ```
