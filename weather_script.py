@@ -173,13 +173,13 @@ class WeatherCard(BoxLayout):
         self.add_widget(top)
         self.add_widget(BoxLayout(size_hint_y=1))
 
-        self.hourly_box = ScrollView(size_hint_y=None, height=120, do_scroll_x=False, do_scroll_y=False)
+        self.hourly_box = ScrollView(size_hint_y=None, height=130, do_scroll_x=False, do_scroll_y=False)
         self.hourly_layout = BoxLayout(orientation="horizontal", size_hint_x=None, spacing=5)
         self.hourly_layout.bind(minimum_width=self.hourly_layout.setter('width'))
         self.hourly_box.add_widget(self.hourly_layout)
         self.add_widget(self.hourly_box)
 
-        self.forecast_box = BoxLayout(orientation="horizontal", size_hint_y=None, height=140)
+        self.forecast_box = BoxLayout(orientation="horizontal", size_hint_y=None, height=150)
         self.add_widget(self.forecast_box)
 
         self.update_weather()
@@ -283,9 +283,9 @@ class WeatherCard(BoxLayout):
                 hh_hour = dt.hour
                 ip = os.path.join(ICON_PATH, WEATHER_ICON.get(hh["weathercode"], "01") +
                                   ("d" if 6 <= hh_hour < 18 else "n") + ".png")
-                b.add_widget(Label(text=f"{int(hh['temp'])}°C", size_hint_y=None, height=30, font_size=16))
+                b.add_widget(Label(text=f"{int(hh['temp'])}°C", size_hint_y=None, height=40, font_size=16))
                 b.add_widget(Image(source=ip if os.path.exists(ip) else os.path.join(ICON_PATH, "01d.png"),
-                                   size_hint_y=None, height=60, allow_stretch=True, keep_ratio=True))
+                                   size_hint_y=None, height=70, allow_stretch=True, keep_ratio=True))
                 b.add_widget(Label(text=dt.strftime("%H:%M"), size_hint_y=None, height=30, font_size=16))
                 self.hourly_layout.add_widget(b)
 
