@@ -62,8 +62,8 @@ pip install kivy requests tzdata feedparser
 ```bash
 nano ~/weather_app/weather_script.py
 ```
-**2. Copy the script content, you can find the script on the above instructions under the name weather_script.py or go [HERE](https://github.com/Pesicp/desk.mate.zero/blob/main/weather_script.py)**
-**3. Paste the complete script inside, just copy it and inside terminal press right mouse to paste, save with Ctrl+O, Enter, exit with Ctrl+X**
+- **2. Copy the script content, you can find the script on the above instructions under the name weather_script.py or go [HERE](https://github.com/Pesicp/desk.mate.zero/blob/main/weather_script.py)**
+- **3. Paste the complete script inside, just copy it and inside terminal press right mouse to paste, save with Ctrl+O, Enter, exit with Ctrl+X**
 ---
 ## 5. Weather Icons
 **1. Create icons folder**
