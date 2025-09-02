@@ -120,6 +120,7 @@ source ~/weather_app/venv/bin/activate
 python ~/weather_app/weather_script.py
 ```
 **3. To exit, press Ctrl+C in the terminal**
+
 ---
 ## 9. Make it Auto-Start on Boot
 **1. Run:**
