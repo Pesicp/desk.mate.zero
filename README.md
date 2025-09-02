@@ -17,7 +17,7 @@ I used Raspberry Pi Zero 2W and [Spotpear](https://de.aliexpress.com/item/100500
 - You only need screws that comes with the touchscreen in RPI-Touch-Case bundle
 ## Case stl files can be found on [Printables](https://www.printables.com/model/1402602)
 
-## 1. Preparation
+# Preparation
 
 - Download and install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (for SSH access).
 - Download and install the [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
