@@ -1,6 +1,5 @@
 # Description
 
-## Cards
 - **Picture slideshow** - New picture every 60 minutes, Picture changes on touch.
 - **Fullscreen Clock** - Wifi on, it always shows time from the first weather card. Wifi off, shows time from network.
 - **Weather Forecast** - Shows weather, hourly 9 hours in advance, daily 5 days, and current. Also shows time in selected city. When wifi is off the clock keeps ticking, the weather dissapears. 
