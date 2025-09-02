@@ -36,46 +36,46 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install -y python3-pip python3-setuptools python3-venv python3-dbus network-manager 
     libmtdev1 libxrender1 libgles2-mesa libegl1-mesa libgl1-mesa-glx libsdl2-dev mesa-utils
 ```
-2. Enable and start Network Manager (just in case)
+**2. Enable and start Network Manager** (just in case)
 ```
 sudo systemctl enable NetworkManager
 sudo systemctl start NetworkManager
 ```
 ---
 ## 3. Python Environment and App Setup
-1. Create weather_app folder and Python virtual environment
+**1. Create weather_app folder and Python virtual environment**
 ```bash
 mkdir -p ~/weather_app
 python3 -m venv ~/weather_app/venv
 ```
-2. Activate virtual environment
+**2. Activate virtual environment**
 ```
 source ~/weather_app/venv/bin/activate
 ```
-3. Install Python dependencies
+**3. Install Python dependencies**
 ```
 pip install kivy requests tzdata feedparser
 ```
 ---
 ## 4. Weather Script
-1. Create and edit the weather script
+**1. Create and edit the weather script**
 ```bash
 nano ~/weather_app/weather_script.py
 ```
-2. Copy the script content, you can find the script on the above instructions under the name weather_script.py or go [HERE](https://github.com/Pesicp/desk.mate.zero/blob/main/weather_script.py)
-3. Paste the complete script inside, just copy it and inside terminal press right mouse to paste, save with Ctrl+O, Enter, exit with Ctrl+X
+**2. Copy the script content, you can find the script on the above instructions under the name weather_script.py or go [HERE](https://github.com/Pesicp/desk.mate.zero/blob/main/weather_script.py)**
+**3. Paste the complete script inside, just copy it and inside terminal press right mouse to paste, save with Ctrl+O, Enter, exit with Ctrl+X**
 ---
 ## 5. Weather Icons
-1. Create icons folder
+**1. Create icons folder**
 ```bash
 mkdir -p ~/weather_app/weather_icons
 cd ~/weather_app/weather_icons
 ```
-2. Download standard icons
+**2. Download standard icons**
 ```
 wget https://openweathermap.org/img/wn/{01d,01n,02d,02n,03d,03n,04d,04n,09d,09n,10d,10n,11d,11n,13d,13n,50d,50n}.png
 ```
-3. For high quality icons (optional), run:
+**3. For high quality icons (optional), run:**
 ```
 rm -rf ~/weather_app/weather_icons/*
 wget https://openweathermap.org/img/wn/{01d,01n,02d,02n,03d,03n,04d,04n,09d,09n,10d,10n,11d,11n,13d,13n,50d,50n}@2x.png
@@ -83,12 +83,12 @@ for f in *@2x.png; do mv "$f" "${f/@2x/}"; done
 ```
 ---
 ## 6. Slideshow Pictures
-1. Create pictures folder
+**1. Create pictures folder**
 ```bash
 mkdir -p /home/rpi/pictures/
 cd /home/rpi/pictures/
 ```
-2. Download your pictures with wget, for example:
+**2. Download your pictures with wget, for example:**
 ```
 wget https://yourdomain.com/image1.jpg
 ```
