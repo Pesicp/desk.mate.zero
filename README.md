@@ -110,7 +110,7 @@ wget https://images.wallpaperscraft.com/image/single/autumn_path_foliage_131773_
 wget https://images.wallpaperscraft.com/image/single/tree_horizon_sunset_128367_1024x600.jpg
 ```
 ---
-## 8. Run the App
+## 7. Run the App
 **1. Activate venv (if not already active)**
 ```bash
 source ~/weather_app/venv/bin/activate
@@ -122,7 +122,7 @@ python ~/weather_app/weather_script.py
 **3. To exit, press Ctrl+C in the terminal**
 
 ---
-## 9. Make it Auto-Start on Boot
+## 8. Make it Auto-Start on Boot
 **1. Run:**
 ```bash
 sudo nano /etc/systemd/system/weather_app.service
@@ -160,7 +160,7 @@ sudo systemctl status weather_app.service
 sudo reboot
 ```
 ---
-## 10. Security (Optional but Recommended)
+## 9. Security (Optional but Recommended)
 
 ```bash
 # Disable unneeded services
@@ -188,7 +188,7 @@ sudo ufw status verbose
 
 ---
 
-## 11. Auto-Update in background every night at 04:00 (Optional)
+## 10. Auto-Update in background every night at 04:00 (Optional)
 
 ```bash
 # Create update script
