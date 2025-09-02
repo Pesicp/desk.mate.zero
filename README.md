@@ -17,7 +17,7 @@ I used Raspberry Pi Zero 2W and [Spotpear](https://de.aliexpress.com/item/100500
 - You only need screws that comes with the touchscreen in RPI-Touch-Case bundle
 ## Case stl files can be found on [Printables](https://www.printables.com/model/1402602)
 
-# Preparation
+# 1. Preparation
 
 - Download and install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (for SSH access).
 - Download and install the [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
@@ -38,13 +38,13 @@ I used Raspberry Pi Zero 2W and [Spotpear](https://de.aliexpress.com/item/100500
 ---
 
 ## 2. System Setup
-Update system and install required packages
+1. Update system and install required packages
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y python3-pip python3-setuptools python3-venv python3-dbus network-manager 
     libmtdev1 libxrender1 libgles2-mesa libegl1-mesa libgl1-mesa-glx libsdl2-dev mesa-utils
 ```
-Enable and start Network Manager
+2. Enable and start Network Manager (just in case)
 ```
 sudo systemctl enable NetworkManager
 sudo systemctl start NetworkManager
@@ -53,16 +53,17 @@ sudo systemctl start NetworkManager
 ---
 
 ## 3. Python Environment and App Setup
-
+1. Create weather_app folder and Python virtual environment
 ```bash
-# Create weather_app folder and Python virtual environment
 mkdir -p ~/weather_app
 python3 -m venv ~/weather_app/venv
-
-# Activate virtual environment
+```
+2. Activate virtual environment
+```
 source ~/weather_app/venv/bin/activate
-
-# Install Python dependencies
+```
+3. Install Python dependencies
+```
 pip install kivy requests tzdata feedparser
 ```
 
