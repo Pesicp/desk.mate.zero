@@ -6,7 +6,7 @@
 - **Weather Forecast** - Shows weather, hourly 9 hours in advance, daily 5 days, and current. Also shows time in selected city. When wifi is off the clock keeps ticking, the weather dissapears. 
 - **Add City** - Add and remove cities. Limit is 10 cities for better performance. Douplicates cant be added.
 - **Power, Wifi** - Power off, Reboot. Turn Wifi on or off, change networks with ease.
-## Double press/touch to lock the screen, its disabled for add city card
+- Double press/touch to lock/unlock the screen, its disabled for add city card. Its set up realy fast to avoid accidental lock, 0.2 seconds
 
 # Installation Guide
 
