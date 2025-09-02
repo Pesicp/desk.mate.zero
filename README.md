@@ -13,6 +13,7 @@ I used Raspberry Pi Zero 2W and [Spotpear](https://de.aliexpress.com/item/100500
 - All commands are designed for Raspberry Pi OS Lite (32-bit) with Python 3.
 - You only need screws that comes with the touchscreen in RPI-Touch-Case bundle
 - Case stl files can be found on [Printables](https://www.printables.com/model/1402602)
+- If you run in problems, check troubleshoot at the bottom of this site
 # 1. Preparation
 - Download and install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) (for SSH access).
 - Download and install the [Raspberry Pi Imager](https://www.raspberrypi.com/software/).
