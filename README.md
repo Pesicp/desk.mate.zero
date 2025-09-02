@@ -160,40 +160,45 @@ sudo reboot
 ```
 ---
 ## 9. Security (Optional but Recommended)
-
+**1. Disable unneeded services**
 ```bash
-# Disable unneeded services
-sudo systemctl disable --now avahi-daemon bluetooth
-sudo apt purge -y wolfram-engine libreoffice* minecraft-pi
+sudo systemctl disable avahi-daemon
+sudo systemctl stop avahi-daemon
+sudo systemctl disable bluetooth
+sudo systemctl stop bluetooth
+sudo apt purge wolfram-engine libreoffice* minecraft-pi -y
 sudo apt autoremove -y
-
-# Install and configure UFW firewall
+```
+**2. Install and configure UFW firewall**
+```
 sudo apt install ufw -y
 sudo ufw reset
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
-
-# Allow SSH only from your local subnet
+```
+**3. Allow SSH only from your local subnet**
+```
 SUBNET=$(ip -o -f inet addr show wlan0 | awk '/scope global/ {print $4}')
 sudo ufw allow from $SUBNET to any port 22 proto tcp
-
-# Allow outgoing traffic for weather updates
+```
+**4. Allow outgoing traffic for weather updates**
+```
 sudo ufw allow out 80,443/tcp
-
-# Enable firewall
+```
+**5. Enable firewall**
+```
 sudo ufw enable
 sudo ufw status verbose
 ```
-
+**Confirm with y (Yes)**
 ---
 
 ## 10. Auto-Update in background every night at 04:00 (Optional)
-
+**1. Create update script**
 ```bash
-# Create update script
 sudo nano /usr/local/bin/weather_safe_update.sh
 ```
-Paste:
+**2. Paste this inside, save and exit (Ctrl+O, Enter, Ctrl+X)**
 ```bash
 #!/bin/bash
 sleep 60
@@ -211,14 +216,84 @@ else
     echo "Already updated today, skipping."
 fi
 ```
-_Save and exit. Then:_
+**3. Make it executable**
 ```bash
 sudo chmod +x /usr/local/bin/weather_safe_update.sh
 ```
+**4. Create Systemd Service**
+```
+sudo nano /etc/systemd/system/weather_safe_update.service
+```
+**5. Paste this inside**
+```
+[Unit]
+Description=Silent safe update for Weather Pi
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/weather_safe_update.sh %i
+```
+**6. Create Systemd Timer**
+```
+sudo nano /etc/systemd/system/weather_safe_update.timer
+```
+**7. Paste this inside, save and exit (Ctrl+O, Enter, Ctrl+X)**
+```
+[Unit]
+Description=Daily timer for Weather Pi safe update
+
+[Timer]
+# Run daily at 04:00 local time
+OnCalendar=*-*-* 04:00:00
+# Run once after boot if missed
+Persistent=true
+# Add small delay on boot
+AccuracySec=1min
+
+[Install]
+WantedBy=timers.target
+```
+**8. Create Systemd On-Boot Timer**
+```
+sudo nano /etc/systemd/system/weather_safe_update-onboot.service
+```
+**9. Paste this inside, save and exit (Ctrl+O, Enter, Ctrl+X)**
+```
+[Unit]
+Description=Run safe update on boot if missed
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/weather_safe_update.sh boot
+```
+**10. Create a corresponding timer**
+```
+sudo nano /etc/systemd/system/weather_safe_update-onboot.timer
+````
+**11 Paste this inside, save and exit (Ctrl+O, Enter, Ctrl+X)**
+```
+[Unit]
+Description=Trigger safe update on boot if missed
+
+[Timer]
+OnBootSec=1min
+Unit=weather_safe_update-onboot.service
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+```
+**12. Enable Timers**
+```
+sudo systemctl enable --now weather_safe_update.timer
+sudo systemctl enable --now weather_safe_update-onboot.timer
+```
+**if the device freezes just unplug the power it and plug it again, to me it only happend once**
+- Updates run silently every day at 04:00, if wifi is connected.
+- If Pi is off at 04:00 → update runs 1 min after next boot.
+- Weather station is never interrupted.
 ---
-
 ## Troubleshooting
-
 - **If the device freezes, unplug and replug power**
 - **If you exit SSH for some reason, you must run this first to activate venv**
 ```
