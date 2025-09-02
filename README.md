@@ -1,7 +1,7 @@
 # DeskMate Zero
 ![1](https://github.com/Pesicp/desk.mate.zero/blob/main/img_20250902_1525462.webp)
 
-<img src="(https://github.com/Pesicp/desk.mate.zero/blob/main/img_20250902_151050.webp)" width="48">
+<img src="https://github.com/Pesicp/desk.mate.zero/blob/main/img_20250902_151050.webp" width="48">
 
 
 # Description
