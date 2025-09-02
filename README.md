@@ -62,7 +62,8 @@ pip install kivy requests tzdata feedparser
 ```bash
 nano ~/weather_app/weather_script.py
 ```
-2. (Paste the complete script here, save with Ctrl+O, Enter, exit with Ctrl+X)
+2. Copy the script content, you can find the script on the above instructions under the name weather_script.py or go [HERE](https://github.com/Pesicp/desk.mate.zero/blob/main/weather_script.py)
+3. Paste the complete script inside, just copy it and inside terminal press right mouse to paste, save with Ctrl+O, Enter, exit with Ctrl+X
 ---
 ## 5. Weather Icons
 1. Create icons folder
@@ -81,18 +82,32 @@ wget https://openweathermap.org/img/wn/{01d,01n,02d,02n,03d,03n,04d,04n,09d,09n,
 for f in *@2x.png; do mv "$f" "${f/@2x/}"; done
 ```
 ---
-
 ## 6. Slideshow Pictures
-
+1. Create pictures folder
 ```bash
-# Create folder for pictures
 mkdir -p /home/rpi/pictures/
 cd /home/rpi/pictures/
-
-# Download your pictures with wget, for example:
+```
+2. Download your pictures with wget, for example:
+```
 wget https://yourdomain.com/image1.jpg
 ```
-
+**Here are some nice pictures for start**
+```
+wget https://images.wallpaperscraft.com/image/single/waterfall_cliff_stone_141850_1024x600.jpg
+wget https://images.wallpaperscraft.com/image/single/sea_sunset_horizon_131804_1024x600.jpg
+wget https://images.wallpaperscraft.com/image/single/boat_mountains_lake_135258_1024x600.jpg
+wget https://images.wallpaperscraft.com/image/single/ocean_beach_aerial_view_134429_1024x600.jpg
+wget https://images.wallpaperscraft.com/image/single/mountains_lake_grass_137616_1024x600.jpg
+wget https://images.wallpaperscraft.com/image/single/sea_sunset_art_131736_1024x600.jpg
+wget https://images.wallpaperscraft.com/image/single/autumn_forest_park_128379_1024x600.jpg
+wget https://images.wallpaperscraft.com/image/single/sunflowers_field_sunset_123231_1024x600.jpg
+wget https://images.wallpaperscraft.com/image/single/landscape_mountains_sun_140434_1024x600.jpg
+wget https://images.wallpaperscraft.com/image/single/lake_mountains_solitude_124541_1024x600.jpg
+wget https://images.wallpaperscraft.com/image/single/bench_autumn_park_125807_1024x600.jpg
+wget https://images.wallpaperscraft.com/image/single/autumn_path_foliage_131773_1024x600.jpg
+wget https://images.wallpaperscraft.com/image/single/tree_horizon_sunset_128367_1024x600.jpg
+```
 ---
 
 ## 8. Run the App
