@@ -1,4 +1,3 @@
-#Imports
 from kivy.config import Config
 Config.set('kivy', 'keyboard_mode', 'dock')
 Config.set('kivy', 'exit_on_escape', '0')
@@ -143,13 +142,13 @@ class WeatherCard(BoxLayout):
         top.add_widget(self.today_icon)
 
         ci = BoxLayout(orientation='vertical', size_hint=(None, 1), width=300)
-        self.city_label = Label(text=city["name"], font_size=40, size_hint_y=None, height=50)
-        self.temp_label = Label(font_size=24, size_hint_y=None, height=30)
+        self.city_label = Label(text=city["name"], font_size=50, size_hint_y=None, height=80)
+        self.temp_label = Label(font_size=40, size_hint_y=None, height=30)
         self.code_label = Label(font_size=24, size_hint_y=None, height=30)
 
         update_box = BoxLayout(orientation='horizontal', size_hint_y=None, height=30, spacing=5)
-        self.update_label = Label(font_size=24)
-        refresh_btn = Button(text="R", size_hint=(None, 1), width=50, font_size=24,
+        self.update_label = Label(font_size=20)
+        refresh_btn = Button(text="R", size_hint=(None, 1), width=50, font_size=20,
                              background_color=(0.5, 0.5, 0.5, 1), color=(1, 1, 1, 1))
         refresh_btn.bind(on_press=lambda i: self._safe_update_weather())
         update_box.add_widget(self.update_label)
@@ -264,7 +263,7 @@ class WeatherCard(BoxLayout):
         
         self.temp_label.text = f"{int(cur_temp)}°C" if isinstance(cur_temp, (int, float)) else cur_temp
         self.code_label.text = WEATHER_DESC.get(cur_code, f"Code {cur_code}")
-        self.update_label.text = f"Last Update: {datetime.now(self.timezone).strftime('%H:%M')}"
+        self.update_label.text = f"Updated at: {datetime.now(self.timezone).strftime('%H:%M')}"
 
         #Hourly forecast
         self.hourly_layout.clear_widgets()
