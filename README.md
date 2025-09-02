@@ -1,5 +1,5 @@
 # DeskMate Zero
-<img src="[(https://github.com/Pesicp/desk.mate.zero/blob/main/img_20250902_1525462.webp)]" alt="Alt text" width="400"/>
+<img src="(https://github.com/Pesicp/desk.mate.zero/blob/main/img_20250902_1525462.webp)" alt="Alt text" width="400" height="400"/>
 
 # Description
 - **Picture slideshow** - New picture every 60 minutes, Picture changes on touch.
