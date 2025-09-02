@@ -30,6 +30,7 @@ I used Raspberry Pi Zero 2W and [Spotpear](https://de.aliexpress.com/item/100500
     - Configure WiFi (Input name and password of your network)
     - Set country, locale, timezone, keyboard layout
   - Flash the SD card and insert into your Pi.
+  - Connect your PI to the display
 - Boot the Pi and connect via SSH using PuTTY.
     - If you cant connect with your username via putty, use your local ip adress, you can find it on the pi display  
 
