@@ -38,14 +38,14 @@ I used Raspberry Pi Zero 2W and [Spotpear](https://de.aliexpress.com/item/100500
 ---
 
 ## 2. System Setup
-
+Update system and install required packages
 ```bash
-# Update system and install required packages
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y python3-pip python3-setuptools python3-venv python3-dbus network-manager 
     libmtdev1 libxrender1 libgles2-mesa libegl1-mesa libgl1-mesa-glx libsdl2-dev mesa-utils
-
-# Enable and start Network Manager
+```
+Enable and start Network Manager
+```
 sudo systemctl enable NetworkManager
 sudo systemctl start NetworkManager
 ```
