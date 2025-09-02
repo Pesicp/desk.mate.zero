@@ -144,7 +144,7 @@ class WeatherCard(BoxLayout):
         ci = BoxLayout(orientation='vertical', size_hint=(None, 1), width=300)
         self.city_label = Label(text=city["name"], font_size=50, size_hint_y=None, height=80)
         self.temp_label = Label(font_size=40, size_hint_y=None, height=30)
-        self.code_label = Label(font_size=24, size_hint_y=None, height=30)
+        self.code_label = Label(font_size=26, size_hint_y=None, height=50)
 
         update_box = BoxLayout(orientation='horizontal', size_hint_y=None, height=30, spacing=5)
         self.update_label = Label(font_size=20)
@@ -160,7 +160,7 @@ class WeatherCard(BoxLayout):
         top.add_widget(BoxLayout(size_hint_x=1))
 
         clock_box = BoxLayout(orientation='vertical', size_hint=(None, 1), width=200, spacing=5)
-        self.clock_label = Label(font_size=72)
+        self.clock_label = Label(font_size=80)
         self.date_label = Label(font_size=30)
         clock_box.add_widget(BoxLayout(size_hint_y=2))
         clock_box.add_widget(Label(size_hint_y=None, height=2))
