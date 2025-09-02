@@ -215,28 +215,19 @@ _Save and exit. Then:_
 ```bash
 sudo chmod +x /usr/local/bin/weather_safe_update.sh
 ```
-
-Create systemd timer and service files as needed (see advanced systemd documentation).
-
 ---
 
 ## Troubleshooting
 
-- If the device freezes, unplug and replug power.
-- To manually start:  
-  `source ~/weather_app/venv/bin/activate && python ~/weather_app/weather_script.py`
-- To check logs:  
-  `sudo journalctl -u weather_app.service`
-- Update logs (if enabled): `/home/rpi/weather_update.log`
-
+- If the device freezes, unplug and replug power
+- IF YOU EXIT YOUR SSH FOR SOME REASON YOU NEED TO RUN THIS BEFORE THE SCRIPT TO ACTIVATE VENV:
+```
+source /home/rpi/weather_app/venv/bin/activate
+```	
+- Then you can run your script
+```
+python ~/weather_app/weather_script.py
+```	
+ALSO IF PUTTY DOESNT BRING YOU TO LOGIN FOR YOUR PI; JUST EXIT AND RESTART PUTTY
 ---
-
-## Notes
-
-- All steps are needed for a working install.
-- For best results, use high quality icons and your own images.
-- For SSH problems, restart PuTTY and reconnect.
-
----
-
-**Enjoy**
+# **Enjoy**
