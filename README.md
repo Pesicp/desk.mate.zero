@@ -313,7 +313,6 @@ python ~/weather_app/weather_script.py
 ---
 ## I made the script with help of ai, i am a hobyst not a programmer, if you have some tips to optimise the script and the setup, be my guest.
 
-If you like my work buy me a coffe :)
-buymeacoffee.com/pepesc
+If you like my work [buy me a coffe](buymeacoffee.com/pepesc)
 
 # **Enjoy**
