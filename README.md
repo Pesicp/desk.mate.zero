@@ -312,4 +312,7 @@ python ~/weather_app/weather_script.py
 - **If Putty doesnt show you login screen just restart it**
 ---
 ## I made the script with help of ai, i am a hobyst not a programmer, if you have some tips to optimise the script and the setup, be my guest.
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="pepesc" data-color="#5F7FFF" data-emoji="☕" data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+
 # **Enjoy**
